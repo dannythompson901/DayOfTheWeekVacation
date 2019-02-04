@@ -1,0 +1,22 @@
+departure = int(input("0 - 6, 0 for Sunday 6 for Saturday, What day are you leaving on? "))
+num_of_days = int(input("Number of days you will be on vacation: "))
+
+arrival1 = departure + num_of_days
+arrival = arrival1 % 6
+
+if arrival == 1:
+    print ("You will be gone for ", num_of_days, " days. Sunday is the day you will return.")
+elif arrival == 2:
+    print ("You will be gone for ", num_of_days, " days. Monday is the day you will return.")
+elif arrival == 3:
+    print ("You will be gone for ", num_of_days, " days. Tuesday is the day you will return.")
+elif arrival == 2:
+    print ("You will be gone for ", num_of_days,  " days. Wednesday is the day you will return.")
+elif arrival == 2:
+    print ("You will be gone for ", num_of_days, " days. Thursday is the day you will return.")
+elif arrival == 2:
+    print ("You will be gone for ", num_of_days, " days. Friday is the day you will return.")
+elif arrival == 2:
+    print ("You will be gone for ", num_of_days, " days. Saturday is the day you will return.")
+else:
+    print("The day you entered is Invalid")
